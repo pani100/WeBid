@@ -106,7 +106,8 @@ if (isset($_POST['action'])) {
                     'ERROR' => (isset($ERR)) ? $ERR : ''
                     ));
 
-            $template->set_filenames(array(
+            include 'header.php';
+			$template->set_filenames(array(
                     'body' => 'categoryconfirm.tpl'
                     ));
             $template->display('body');
